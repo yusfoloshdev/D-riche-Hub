@@ -1,0 +1,191 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* VARIABLES */
+:root {
+  --primary: #e63946;
+  --dark: #0f172a;
+  --light: #ffffff;
+  --gray: #64748b;
+  --bg: #f8fafc;
+}
+
+/* BASE */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* LAYOUT */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* HEADER */
+header {
+  background: var(--dark);
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.brand h1 {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.brand span {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: var(--gray);
+}
+
+/* NAV */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* HERO */
+#hero {
+  background: linear-gradient(rgba(15,23,42,0.9), rgba(15,23,42,0.9)),
+              url('your-image.jpg') center/cover;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #c5303a;
+}
+
+/* PORTFOLIO */
+.portfolio-category,
+h3 {
+  margin: 80px 0;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-category::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary);
+  margin: 0 auto 30px;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-card h4 {
+  padding: 10px;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* SERVICES */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.services-grid li {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* CONTACT */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
