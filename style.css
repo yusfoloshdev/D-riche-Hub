@@ -52,17 +52,17 @@ header {
 
 /* BRAND (FIXED SIZE) */
 .brand h1 {
-  font-size: 1.5rem; /* FIXED from 10rem */
+  font-size: 10rem; /* FIXED from 10rem */
 }
 
 .brand span {
-  font-size: 0.9rem;
+  font-size: 2rem;
   display: block;
   color: var(--gray);
 }
 
 .tagline {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--gray);
 }
 
